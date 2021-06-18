@@ -1,6 +1,10 @@
 <template>
   <section class="section">
-    <h2 class="is-size-4">Sign In</h2>
+    <h2 class="is-size-4">Register</h2>
+    <b-field label="Name">
+      <b-input type="text" value=""> </b-input>
+    </b-field>
+
     <b-field label="Email">
       <b-input type="email" value=""> </b-input>
     </b-field>
@@ -9,9 +13,10 @@
       <b-input type="password" value="" password-reveal> </b-input>
     </b-field>
 
-    <b-field>
-      <b-checkbox>Remember me</b-checkbox>
+    <b-field label="Confirm Password">
+      <b-input type="password" value="" password-reveal> </b-input>
     </b-field>
+
     <div class="buttons">
       <b-button type="is-primary">Submit</b-button>
     </div>

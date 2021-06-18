@@ -35,7 +35,26 @@ export default {
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    'nuxt-i18n',
   ],
+
+  i18n: {
+    locales: ['en', 'id'],
+    defaultLocale: 'id',
+    vueI18n: {
+      fallbackLocale: 'en',
+      messages: {
+        en: {
+          register: 'Register',
+          signin: 'Sign In',
+        },
+        id: {
+          register: 'Daftar',
+          signin: 'Masuk',
+        },
+      },
+    },
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
