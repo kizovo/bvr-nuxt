@@ -29,32 +29,34 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/buefy
     'nuxt-buefy',
-    // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
-    'nuxt-i18n',
-  ],
-
-  i18n: {
-    locales: ['en', 'id'],
-    defaultLocale: 'id',
-    vueI18n: {
-      fallbackLocale: 'en',
-      messages: {
-        en: {
-          register: 'Register',
-          signin: 'Sign In',
-        },
-        id: {
-          register: 'Daftar',
-          signin: 'Masuk',
-        },
+    [
+      'nuxt-i18n',
+      {
+        locales: [
+          {
+            code: 'en',
+            iso: 'en-US',
+            file: 'en.js',
+          },
+          {
+            code: 'id',
+            iso: 'id-ID',
+            file: 'id.js',
+          },
+        ],
+        lazy: true,
+        langDir: 'lang/',
+        defaultLocale: 'id',
+        vueI18nLoader: true,
       },
-    },
-  },
+    ],
+    // https://go.nuxtjs.dev/axios
+    '@nuxtjs/axios',
+  ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},

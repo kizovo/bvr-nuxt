@@ -10,7 +10,8 @@
           </template>
 
           <template #start>
-            <b-navbar-item href="#"> Documentation </b-navbar-item>
+            <b-navbar-item href="#">{{ $t('nav.contact') }}</b-navbar-item>
+            <b-navbar-item href="#">{{ $t('nav.about') }}</b-navbar-item>
           </template>
 
           <template #end>
@@ -20,10 +21,10 @@
                   <b-icon icon="account-circle"></b-icon>
                 </template>
                 <b-dropdown-item href="/auth/login">
-                  {{ $t('signin') }}
+                  {{ $t('auth.login') }}
                 </b-dropdown-item>
                 <b-dropdown-item href="/auth/register">
-                  {{ $t('register') }}
+                  {{ $t('auth.register') }}
                 </b-dropdown-item>
               </b-dropdown>
             </b-navbar-item>
