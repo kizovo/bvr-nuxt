@@ -1,0 +1,14 @@
+.dropdown {
+  cursor: pointer;
+}
+.icon-svg {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  font-size: 36px;
+
+  &.white {
+    filter: brightness(0) invert(1);
+  }
+}
