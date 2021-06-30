@@ -1,5 +1,14 @@
-.dropdown {
+.clickable {
   cursor: pointer;
+}
+form {
+  .field {
+    position: relative;
+    .icon-svg {
+      font-size: 24px;
+      bottom: 7px;
+     }
+  }
 }
 .icon-svg {
   display: inline-block;
@@ -7,8 +16,23 @@
   height: 1em;
   stroke-width: 0;
   font-size: 36px;
-
+  &.overlay-left, &.overlay-right {
+    position: absolute;
+    z-index: 10;
+  }
+  &.overlay-left {
+    left:8px;
+  }
+  &.overlay-right {
+    right:8px;
+  }
   &.white {
     filter: brightness(0) invert(1);
+  }
+}
+.navbar-burger {
+  color: #fff;
+  &:hover {
+    color: #fff;
   }
 }

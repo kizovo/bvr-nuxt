@@ -1,5 +1,5 @@
 <template>
-  <register />
+  <register mode="page" />
 </template>
 
 <script>
